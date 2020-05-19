@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- SCSS -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="error"></div>
+      <h1><span>S</span>ave <span>T</span>he <span>P</span>lanet</h1>
+      <h3>It's the only one we've got!</h3>
+      <div class="row">
+        <div class="text col-md-4">
+          <p>
+            Green Life has tons of opportunites for you to get involved in
+            taking care of your environment.
+          </p>
+          <p>
+            Our organization spans country wide so there's always a chance for
+            you to do your part.
+          </p>
+          <p>
+            Come alone or bring some friends but be sure to wear clothing that
+            you won't mind getting dirty. We'll be spending time in nature so be
+            sure to dress accordingly!
+          </p>
+          <p>
+            Sign up to join the thousands of other environmental warriors
+            fighting for a better tomorrow.
+          </p>
+        </div>
+        <div class="col-md-4 offset-md-3">
+          <form id="form" action="/" method="get">
+            <label for="firstName">First Name</label>
+            <input type="text" id="fname" class="fname" required />
+            <br />
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lname" class="lname" required />
+            <br />
+            <label for="email">Email</label>
+            <input type="email" id="email" class="email" required />
+            <br />
+            <label for="age">18 or over? </label>
+            <label for="yes">Yes</label>
+            <input type="radio" name="over-18" id="yes" class="yes" />
+            <label for="no">No</label>
+            <input type="radio" name="over-18" id="no" class="no" />
+            <div id="answer" class="answer"></div>
+            <fieldset>
+              <legend>How did you hear about us?</legend>
+              <input type="radio" name="about-us" class="fb" id="fb" />
+              <label for="fb">Facebook</label>
+              <br />
+              <input type="radio" name="about-us" class="insta" id="insta" />
+              <label for="insta">Instagram</label>
+              <br />
+              <input type="radio" name="about-us" class="google" id="google" />
+              <label for="google">Google</label>
+              <br />
+              <input type="radio" name="about-us" class="other" id="other" />
+              <label for="other">Other</label>
+            </fieldset>
+            <button id="submit" class="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
