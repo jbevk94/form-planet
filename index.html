@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <!-- bootstrap -->
+    <!-- BOOTSTRAP -->
     <link
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/bootstrap"
     />
-    <!-- SCSS -->
-
+    <!-- LOCAL CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <div id="error"></div>
       <h1><span>S</span>ave <span>T</span>he <span>P</span>lanet</h1>
       <h3>It's the only one we've got!</h3>
-      <div class="row">
-        <div class="text col-md-4">
+      <div class="row ">
+        <div class="col-sm-5 pr-4 text">
           <p>
             Green Life has tons of opportunites for you to get involved in
             taking care of your environment.
@@ -38,17 +39,18 @@
             fighting for a better tomorrow.
           </p>
         </div>
-        <div class="col-md-4 offset-md-3">
+        <div class="col-sm-4 offset-md-1">
           <form id="form" action="/" method="get">
             <label for="firstName">First Name</label>
             <input type="text" id="fname" class="fname" required />
-            <br />
+            
             <label for="lastName">Last Name</label>
             <input type="text" id="lname" class="lname" required />
-            <br />
+            
             <label for="email">Email</label>
+          
             <input type="email" id="email" class="email" required />
-            <br />
+            
             <label for="age">18 or over? </label>
             <label for="yes">Yes</label>
             <input type="radio" name="over-18" id="yes" class="yes" />
@@ -74,6 +76,6 @@
         </div>
       </div>
     </div>
-    <script src="form.js"></script>
+    <script src="/src/js/form.js"></script>
   </body>
 </html>
